@@ -1,6 +1,7 @@
 let num: number = 5;
+let copy: number = num;
 let names: string[] = ["rohit", "virat", "hardik", "jasprit"];
-console.log("before", num, names);
+console.log("before", num, copy, names);
 
 function passByValue(newNumber: number) {
   num = newNumber;
@@ -14,4 +15,4 @@ function passByReference(player: string) {
 
 const updatedNum = passByValue(7);
 const updatedNames = passByReference("surya");
-console.log("after", updatedNum, updatedNames);
+console.log("after", updatedNum, copy, updatedNames);
