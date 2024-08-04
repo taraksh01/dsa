@@ -1,0 +1,26 @@
+{
+  "name": "dsa",
+  "version": "1.0.0",
+  "description": "In this repository i will be putting all the solved dsa problems starting from 4th aug 2024.",
+  "scripts": {
+    "test": "echo \"There is no test defined yet\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taraksh01/dsa.git"
+  },
+  "keywords": [
+    "dsa",
+    "taraksh01",
+    "Tarak"
+  ],
+  "author": "Tarak Shaw",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/taraksh01/dsa/issues"
+  },
+  "homepage": "https://github.com/taraksh01/dsa#readme",
+  "devDependencies": {
+    "@types/node": "^22.1.0"
+  }
+}
