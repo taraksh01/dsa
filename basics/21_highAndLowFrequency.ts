@@ -5,12 +5,17 @@ const array: number[] = [
 
 // Time complexity => O(N)
 // Space complexity => O(N)
-function arrayFrequency(array: number[]): [string, number][] {
+function highAndLowFrequency(array: number[]): [String, number][] {
   const frequency: { [key: number]: number } = {};
   for (let i = 0; i < array.length; i++) {
     frequency[array[i]] = frequency[array[i]] + 1 || 1;
   }
-  return Object.entries(frequency);
+  let sorted: [String, number][] = Object.entries(frequency).sort(
+    (a, b) => a[1] - b[1]
+  );
+  return [sorted[0], sorted[sorted.length - 1]];
 }
 
-console.log(`Frequency of array elements are ${arrayFrequency(array)}`);
+console.log(
+  `High and low Frequency of array elements are ${highAndLowFrequency(array)}`
+);
