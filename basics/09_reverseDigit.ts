@@ -7,7 +7,7 @@ rl.question(`Enter a number: `, (input: string) => {
   rl.close();
 });
 
-// Time complexity => O(N)
+// Time complexity => O(log(N))
 // Space complexity => O(1)
 function reverseDigit(input: number): number {
   let reverse: number = 0;
